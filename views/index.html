@@ -1,0 +1,56 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Node">
+
+    <title>Text to speech!</title>
+
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Text to speech!</h1>
+    </header>
+
+    <main>
+      <h2>AWS Polly</h2>
+
+      <p>Neural Engine Voice Synthesis</p>
+
+  
+      <form name="interactiveForm">
+        <img src="/amazon-polly_deck_asset.png" width="250" height="250">
+        <label for="selectedVoice"><span>Voice:</span>
+          <select name="voice" id="voiceSelect"></select>
+        </label>
+  
+        <label for="yourName"><span>Text:</span>
+          <input type="text" name="yourName" value="Hello world" />
+        </label>
+        <button type="button"
+          onclick="doSomething()">Speak</button>
+<!--           <button type="button"
+          onclick="doSomethingElse()">download</button> -->
+      </form>
+    </main>
+
+    <footer></footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+
+    
+    <audio id="player"></audio>
+    
+  </body>
+</html>
