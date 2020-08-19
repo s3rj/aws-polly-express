@@ -1,6 +1,6 @@
 # aws-polly-express
 
-API keys and calls obfuscated server-side. 
+API keys obfuscated server-side. 
 
 Live demo: https://s3rj-aws-polly-express.glitch.me/ 
 
